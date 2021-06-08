@@ -12,7 +12,7 @@ SO THAT I can enjoy my time visiting and do less research
 
 ## Description 
 
-
+Hotspot, the place to find the hottest spots for your next vacation
 
 ## Usage 
 
