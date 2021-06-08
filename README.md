@@ -37,4 +37,8 @@ SO THAT I can enjoy my time visiting and do less research
 
 
 ##  Created by:
-
+ Alec Sterwart
+ 
+ Brent Albers
+ 
+ Bryan Daniel
