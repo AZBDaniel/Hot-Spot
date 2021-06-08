@@ -20,7 +20,7 @@ SO THAT I can enjoy my time visiting and do less research
 
 ## Web Page Image
 
-![wireFrame](assets\images\hot-spot-wire-frame.PNG)
+![wireFrame](assets/images/hot-spot-wire-frame.PNG)
 
 ## Features Codes
 
