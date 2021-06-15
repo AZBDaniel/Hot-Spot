@@ -51,13 +51,14 @@
     <!--State Lists-->
     <section class="main section">
         <div class="cityList">
+            <div id="map_div" style="height: 400px;"></div>
             <div class="Phoenix">Phoenix</div>
             <div class="Tucson">Tucson</div>
             <div class="Flagstaff">Flagstaff</div>
             <div class="Sedona">Sedona</div>
             <div class="section cityList has-text-centered">
                 <!--Dropdown Menu to Lists Places-->
-                <select id="stateSelect" onchange="stateDisplay()">
+                <select id="citySelect" onchange="stateDisplay()">
                     <option value="Tu">Tucson</option>
                     <option value="Px">Phoenix</option>
                     <option value="Fs">Flagstaff</option>
@@ -85,6 +86,7 @@
         </div>
 
     </footer>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
