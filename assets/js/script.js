@@ -1,5 +1,6 @@
 //Javascirpt Goes Here//
 var apiKey = 'AIzaSyA3pyIRKeVOMy99DHETNa1VrGExhuXM0Z8'
+var map;
 
 document.getElementById("citySelect").onchange = function () { cityDisplay() };
 
@@ -11,7 +12,7 @@ function cityDisplay() {
 /*
  * declare map as a global variable
  */
-var map;
+
 
 /*
  * use google maps api built-in mechanism to attach dom events
