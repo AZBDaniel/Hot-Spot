@@ -1,13 +1,17 @@
 //Javascirpt Goes Here//
 var apiKey = 'AIzaSyA3pyIRKeVOMy99DHETNa1VrGExhuXM0Z8'
-
+var map;
 
 document.getElementById("citySelect").onchange = function () { cityDisplay() };
 
-function  cityDisplay() {
+function cityDisplay() {
     var place = document.getElementById("citySelect").value;
-    document.getElementById("cityMap").innerHTML = "you selected " + place;
+    document.getElementById("demo").innerHTML = "you selected " + place;
 }
+
+/*
+ * declare map as a global variable
+ */
 
 
 /*
@@ -19,7 +23,7 @@ google.maps.event.addDomListener(window, "load", function () {
      * create map
      */
     var map = new google.maps.Map(document.getElementById("map_div"), {
-        center: new google.maps.LatLng(33.808678, -117.918921),
+        center: new google.maps.LatLng(33.4483771, -112.0740373),
         zoom: 14,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -47,18 +51,18 @@ google.maps.event.addDomListener(window, "load", function () {
      * add markers to map
      */
     var marker0 = createMarker({
-        position: new google.maps.LatLng(33.808678, -117.918921),
+        position: new google.maps.LatLng(33.44550433505641, -112.06682396831512),
         map: map,
         icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
     }, "<h1>Marker 0</h1><p>This is the home marker.</p>");
 
     var marker1 = createMarker({
-        position: new google.maps.LatLng(33.818038, -117.928492),
+        position: new google.maps.LatLng(33.44584440744825, -112.07142560774396),
         map: map
     }, "<h1>Marker 1</h1><p>This is marker 1</p>");
 
     var marker2 = createMarker({
-        position: new google.maps.LatLng(33.803333, -117.915278),
+        position: new google.maps.LatLng(3.44856197658404, -112.07729772866107),
         map: map
     }, "<h1>Marker 2</h1><p>This is marker 2</p>");
 });
