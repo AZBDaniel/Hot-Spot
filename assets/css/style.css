@@ -1,12 +1,17 @@
 /* CSS Goes Here*/
 :root {
-    --primary-color: rgb(2, 0, 117);
-    --secondary-color: rgb(231, 36, 2);
-    --tertiary-color: rgb(255, 255, 255);
+    --primary-color: #002868;
+    --secondary-color: #bf0a30;
+    --tertiary-color: #ffff;
 }
 
-.navbar-brand a{
-    size: 500px;
+.navbar {
+    padding: 5px 5px;
+    background-color: #002868;
+}
+
+.img-container {
+    width: 320px;
 }
 
 #hero {
