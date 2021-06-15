@@ -1,9 +1,4 @@
-/* CSS Goes Here*/
-:root {
-    --primary-color: rgb(2, 0, 117);
-    --secondary-color: rgb(231, 36, 2);
-    --tertiary-color: rgb(255, 255, 255);
-}
+
 
   #map {
     height: 100%;
