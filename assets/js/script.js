@@ -6,22 +6,207 @@ document.getElementById("citySelect").onchange = function () { cityDisplay() };
 
 function cityDisplay() {
     var place = document.getElementById("citySelect").value;
-    document.getElementById("demo").innerHTML = "you selected " + place;
+    document.getElementById("demo").innerHTML = "You Selected " + place + ":";
 
-    if (place === "Sedona") {
-        document.querySelector("#siteOne").innerHTML = "Sedona is a beautiful town :)";
+    if (place == "Phoenix") {
+        document.getElementById("demo2").innerHTML = "Marker One: Suns Arena, Marker Two: Chase Field";
+        var map = new google.maps.Map(document.getElementById("map_div"), {
+            center: new google.maps.LatLng(33.44872557096855, -112.07732143245543),
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+    
+        /*
+         * create infowindow (which will be used by markers)
+         */
+        var infoWindow = new google.maps.InfoWindow();
+    
+        /*
+         * marker creater function (acts as a closure for html parameter)
+         */
+        function createMarker(options, html) {
+            var marker = new google.maps.Marker(options);
+            if (html) {
+                google.maps.event.addListener(marker, "click", function () {
+                    infoWindow.setContent(html);
+                    infoWindow.open(options.map, this);
+                });
+            }
+            return marker;
+        }
+    
+        /*
+         * add markers to map
+         */
+        var Phoenix = createMarker({
+            position: new google.maps.LatLng(33.44872557096855, -112.07732143245543),
+            map: map,
+            icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
+        }, "<h1>Marker 0</h1><p>This is the home marker.</p>");
+    
+        var SunsArena = createMarker({
+            position: new google.maps.LatLng(33.445740215343555, -112.07119959438322),
+            map: map
+        }, "<h1>Marker 1</h1><p>This is marker 1</p>");
+    
+        var ChaseField = createMarker({
+            position: new google.maps.LatLng(33.445335295770626, -112.06670845287437),
+            map: map
+        }, "<h1>Marker 2</h1><p>This is marker 2</p>");
+    
     }
 
+    else if (place == "Tucson") {
+        document.getElementById("demo2").innerHTML = "Marker One: Tucson Museum of Art, Marker Two: University of Arizona";
+        var map = new google.maps.Map(document.getElementById("map_div"), {
+            center: new google.maps.LatLng(32.22256039879599, -110.97470036193934),
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+    
+        /*
+         * create infowindow (which will be used by markers)
+         */
+        var infoWindow = new google.maps.InfoWindow();
+    
+        /*
+         * marker creater function (acts as a closure for html parameter)
+         */
+        function createMarker(options, html) {
+            var marker = new google.maps.Marker(options);
+            if (html) {
+                google.maps.event.addListener(marker, "click", function () {
+                    infoWindow.setContent(html);
+                    infoWindow.open(options.map, this);
+                });
+            }
+            return marker;
+        }
+    
+        /*
+         * add markers to map
+         */
+        var Tucson = createMarker({
+            position: new google.maps.LatLng(32.22256039879599, -110.97470036193934),
+            map: map,
+            icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
+        }, "<h1>Marker 0</h1><p>This is the home marker.</p>");
+    
+        var artMusuem = createMarker({
+            position: new google.maps.LatLng(32.22342906598506, -110.97498211836474),
+            map: map
+        }, "<h1>Marker 1</h1><p>This is marker 1</p>");
+    
+        var uofa = createMarker({
+            position: new google.maps.LatLng(32.23188296265308, -110.95011234629351),
+            map: map
+        }, "<h1>Marker 2</h1><p>This is marker 2</p>");
+    }
 
+    else if (place == "Flagstaff") {
+        document.getElementById("demo2").innerHTML = "Marker One: Pine Canyon Country Club, Marker Two: Lowell Observatory";
+        var map = new google.maps.Map(document.getElementById("map_div"), {
+            center: new google.maps.LatLng(35.19877955557851, -111.6483567279641),
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+    
+        /*
+         * create infowindow (which will be used by markers)
+         */
+        var infoWindow = new google.maps.InfoWindow();
+    
+        /*
+         * marker creater function (acts as a closure for html parameter)
+         */
+        function createMarker(options, html) {
+            var marker = new google.maps.Marker(options);
+            if (html) {
+                google.maps.event.addListener(marker, "click", function () {
+                    infoWindow.setContent(html);
+                    infoWindow.open(options.map, this);
+                });
+            }
+            return marker;
+        }
+    
+        /*
+         * add markers to map
+         */
+        var dtF = createMarker({
+            position: new google.maps.LatLng(35.19877955557851, -111.6483567279641),
+            map: map,
+            icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
+        }, "<h1>Marker 0</h1><p>This is the home marker.</p>");
+    
+        var pccc = createMarker({
+            position: new google.maps.LatLng(35.16150899008569, -111.64735528631184),
+            map: map
+        }, "<h1>Marker 1</h1><p>This is marker 1</p>");
+    
+        var lowellO = createMarker({
+            position: new google.maps.LatLng(35.20291663518003, -111.66454211381244),
+            map: map
+        }, "<h1>Marker 2</h1><p>This is marker 2</p>");
+    }
 
-    //api call 
+    else if (place == "Sedona") {
+        document.getElementById("demo2").innerHTML = "Marker One: Amitabha Stupa and Peace Park, Marker Two: Sugarloaf Trailhead";
+        var map = new google.maps.Map(document.getElementById("map_div"), {
+            center: new google.maps.LatLng(34.86346157815572, -111.79579874706093),
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+    
+        /*
+         * create infowindow (which will be used by markers)
+         */
+        var infoWindow = new google.maps.InfoWindow();
+    
+        /*
+         * marker creater function (acts as a closure for html parameter)
+         */
+        function createMarker(options, html) {
+            var marker = new google.maps.Marker(options);
+            if (html) {
+                google.maps.event.addListener(marker, "click", function () {
+                    infoWindow.setContent(html);
+                    infoWindow.open(options.map, this);
+                });
+            }
+            return marker;
+        }
+    
+        /*
+         * add markers to map
+         */
+        var sedonaAC = createMarker({
+            position: new google.maps.LatLng(34.86346157815572, -111.79579874706093),
+            map: map,
+            icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
+        }, "<h1>Marker 0</h1><p>This is the home marker.</p>");
+    
+        var pPark = createMarker({
+            position: new google.maps.LatLng(34.875430777404574, -111.80837969158296),
+            map: map
+        }, "<h1>Marker 1</h1><p>This is marker 1</p>");
+    
+        var sugarloafT = createMarker({
+            position: new google.maps.LatLng(34.874286963609215, -111.79624645355497),
+            map: map
+        }, "<h1>Marker 2</h1><p>This is marker 2</p>");
+    }
 }
+
+
+
+
 
 //mobile version of dropdown in navbar
 const citiesIcon = document.querySelector("#cityBurger");
 const navbarMenu = document.querySelector("#navLinks")
 
-cityBurger.addEventListener("click", () => {
+citiesIcon.addEventListener("click", () => {
     navbarMenu.classList.toggle("is-active");
 })
 /*
