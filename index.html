@@ -38,7 +38,7 @@
             <div class="navbar-end">
                 <div class="navbar-item has-dropdown is-hoverable has-background-danger-dark has-text-primary-light">
                     <a class="navbar-link has-background-danger-dark has-text-primary-light">
-                        Cities
+                        Featured Cities
                     </a>
 
                     <div class="navbar-dropdown is-right has-background-danger-dark has-text-primary-light">
@@ -73,7 +73,7 @@
     </section>
 
 
-    <!--State Lists-->
+    <!--City Lists-->
     <div class="container">
         <section class="mapSection">
             <div id="map_div" style="height: 400px;"></div>
@@ -82,16 +82,16 @@
             <div class="Flagstaff"></div>
             <div class="Sedona"></div>
             <div class="section cityList has-text-centered">
-                <p id="demo2"></p>
+                <p id="demo2" class="demotext is-size-4-mobile is-size-3 has-background-link-dark has-text-primary-light"></p>
                 <!--Dropdown Menu to Lists Places-->
-                <select id="citySelect" onchange="stateDisplay()">
+                <select id="citySelect" class="dropdown is-size-4-mobile is-size-3 has-background-danger-dark has-text-primary-light" onchange="stateDisplay()">
                     <option>Search..</option>
                     <option id="phoenixButton" value="Phoenix">Phoenix</option>
                     <option value="Tucson">Tucson</option>
                     <option value="Flagstaff">Flagstaff</option>
                     <option value="Sedona">Sedona</option>
                 </select>
-                <p id="demo"></p>
+                <p id="demo" class="demotext is-size-4-mobile is-size-3 has-background-link-dark has-text-primary-light"></p>
                 <div id="cityImage"></div>
                 
             </div>
