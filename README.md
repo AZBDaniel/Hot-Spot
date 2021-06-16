@@ -36,7 +36,6 @@ As a tourist on vacation, I want an easy way to learn about the city I'm visitin
     CSS
     BULMA
     JAVASCRIPT
-    JQUERY
     GOOGLE MAPS
 
 ##  Created by:
