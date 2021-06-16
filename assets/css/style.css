@@ -4,3 +4,10 @@
     padding: 0;
   }
 
+  #hero {
+    background-image: url("../images/gc-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
