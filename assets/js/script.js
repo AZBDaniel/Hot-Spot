@@ -223,8 +223,8 @@ google.maps.event.addDomListener(window, "load", function () {
      * create map
      */
     var map = new google.maps.Map(document.getElementById("map_div"), {
-        center: new google.maps.LatLng(33.44872557096855, -112.07732143245543),
-        zoom: 14,
+        center: new google.maps.LatLng(34.048927, -111.093735),
+        zoom: 6,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
@@ -250,21 +250,21 @@ google.maps.event.addDomListener(window, "load", function () {
     /*
      * add markers to map
      */
-    var Phoenix = createMarker({
-        position: new google.maps.LatLng(33.44872557096855, -112.07732143245543),
-        map: map,
-        icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
-    }, "<h1>Marker 0</h1><p>This is the home marker.</p>");
+    // var Phoenix = createMarker({
+    //     position: new google.maps.LatLng(33.44872557096855, -112.07732143245543),
+    //     map: map,
+    //     icon: "http://1.bp.blogspot.com/_GZzKwf6g1o8/S6xwK6CSghI/AAAAAAAAA98/_iA3r4Ehclk/s1600/marker-green.png"
+    // }, "<h1>Marker 0</h1><p>This is the home marker.</p>");
 
-    var SunsArena = createMarker({
-        position: new google.maps.LatLng(33.445740215343555, -112.07119959438322),
-        map: map
-    }, "<h1>Marker 1</h1><p>This is marker 1</p>");
+    // var SunsArena = createMarker({
+    //     position: new google.maps.LatLng(33.445740215343555, -112.07119959438322),
+    //     map: map
+    // }, "<h1>Marker 1</h1><p>This is marker 1</p>");
 
-    var ChaseField = createMarker({
-        position: new google.maps.LatLng(33.445335295770626, -112.06670845287437),
-        map: map
-    }, "<h1>Marker 2</h1><p>This is marker 2</p>");
+    // var ChaseField = createMarker({
+    //     position: new google.maps.LatLng(33.445335295770626, -112.06670845287437),
+    //     map: map
+    // }, "<h1>Marker 2</h1><p>This is marker 2</p>");
 });
 
 //Tucson coords
