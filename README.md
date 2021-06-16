@@ -6,14 +6,6 @@
 
 As a tourist on vacation, I want an easy way to learn about the city I'm visiting and some suggestions for places to visit so that I can plan out my vacation time accordingly.
 
-## Description 
-
-
-
-## Usage 
-
-
-
 # Screenshots
 
 ## Wireframe
