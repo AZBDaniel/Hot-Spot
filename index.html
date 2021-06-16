@@ -14,6 +14,8 @@
 
 <body>
 
+    <div id="map"></div>
+
     <!--Header Section-->
     <nav class="navbar has-background-link-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -40,19 +42,19 @@
                     </a>
 
                     <div class="navbar-dropdown is-right has-background-danger-dark has-text-primary-light">
-                        <a class="navbar-item has-background-danger-dark has-text-primary-light">
+                        <a id="phoenixBtn" class="navbar-item has-background-danger-dark has-text-primary-light">
                             Phoenix
                         </a>
                         <hr class="navbar-divider has-background-danger-dark has-text-primary-light">
-                        <a class="navbar-item has-background-danger-dark has-text-primary-light">
+                        <a id="tucsonBtn" class="navbar-item has-background-danger-dark has-text-primary-light">
                             Tucson
                         </a>
                         <hr class="navbar-divider has-background-danger-dark has-text-primary-light">
-                        <a class="navbar-item has-background-danger-dark has-text-primary-light">
+                        <a id="flagstaffBtn" class="navbar-item has-background-danger-dark has-text-primary-light">
                             Flagstaff
                         </a>
                         <hr class="navbar-divider has-background-danger-dark has-text-primary-light">
-                        <a class="navbar-item has-background-danger-dark has-text-primary-light">
+                        <a id="sedonaBtn" class="navbar-item has-background-danger-dark has-text-primary-light">
                             Sedona
                         </a>
                     </div>
@@ -75,46 +77,25 @@
     <div class="container">
         <section class="mapSection">
             <div id="map_div" style="height: 400px;"></div>
-        </section>
-        <section id="cityProfile" class="Phoenix">
-            <div class="flex-row">
-                <h2 class="cityTitle">Phoenix</h2>
-            </div>
-            <div class="cityPhoto">
-                <img src="./assets/images/phoenix.png" alt="phxphoto"/>
-            </div>
-            <div class="phxBio">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aperiam, corrupti, quasi earum laborum cum eius nisi maxime deserunt a velit. Sed laborum distinctio quibusdam, incidunt nesciunt dolorum modi atque?</p>
-            </div>
-        </section>
-            <div class="Phoenix">Phoenix</div>
-            <div class="Tucson">Tucson</div>
-            <div class="Flagstaff">Flagstaff</div>
-            <div class="Sedona">Sedona</div>
+            <div class="Phoenix"></div>
+            <div class="Tucson"></div>
+            <div class="Flagstaff"></div>
+            <div class="Sedona"></div>
             <div class="section cityList has-text-centered">
                 <!--Dropdown Menu to Lists Places-->
                 <select id="citySelect" onchange="stateDisplay()">
-                    <option value="Px">Phoenix</option>
-                    <option value="Tu">Tucson</option>
-                    <option value="Fs">Flagstaff</option>
-                    <option value="Se">Sedona</option>
+                    <option>Search..</option>
+                    <option id="phoenixButton" value="Phoenix">Phoenix</option>
+                    <option value="Tucson">Tucson</option>
+                    <option value="Flagstaff">Flagstaff</option>
+                    <option value="Sedona">Sedona</option>
                 </select>
                 <p id="demo"></p>
+                <p id="demo2"></p>
             </div>
         </section>
 
-        <!--State Information Display-->
-        <section class="cityDisplay">
-            <div class="siteLocation">
-                <div class="siteOne">Click City for Results</div>
-                <div class="siteTwo">Click City for Results</div>
-                <div class="siteThird">Click City for Results</div>
-            </div>
-            <div class="siteweather">Click City to see Weather Forcast</div>
-            <div class="sitedescription">Click Site to see Site Description</div>
-        </section>
-    </div>
-
+    
     <!--Footer/To Come-->
     <footer class="footer">
         <div class="content has-text-centered">
