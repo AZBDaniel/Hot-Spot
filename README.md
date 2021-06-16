@@ -14,35 +14,34 @@ As a tourist on vacation, I want an easy way to learn about the city I'm visitin
 
 
 
-## Web Page Image
+# Screenshots
 
+## Wireframe
 ![wireFrame](assets/images/hot-spot-wire-frame.PNG)
-![HomePage]()
-![Phoenix&Map]()
-![Streetview]()
 
-## Features Codes
-HTML
-CSS
-BULMA
-JAVASCRIPT
-JQUERY
-GOOGLE MAPS
+## Home Page
+![HomePage](assets/images/homepage.PNG)
 
+## Mobile version
+![Mobile](assets/images/mobile.PNG)
 
-## Contributing + Credits
+## Satellite Map
+![Phoenix&Map](assets/images/Phoenixmap.PNG)
 
-### Class Mates
+## Street View
+![Streetview](assets/images/Phoenixmap3.PNG)
 
-
-
-### BootCamp TA's
-
-
+# Built With
+    HTML
+    CSS
+    BULMA
+    JAVASCRIPT
+    JQUERY
+    GOOGLE MAPS
 
 ##  Created by:
 
-Bryan Daniel
-Alec Stewart
-& Brent Albers
+    Bryan Daniel
+    Alec Stewart
+    & Brent Albers
 
