@@ -5,14 +5,6 @@
     --tertiary-color: #ffff;
 }
 
-.navbar {
-    padding: 5px 5px;
-    background-color: #002868;
-}
-
-.img-container {
-    width: 320px;
-}
 
 #hero {
     background-image: url("../images/gc-hero.jpg");

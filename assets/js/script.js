@@ -17,6 +17,13 @@ function cityDisplay() {
     //api call 
 }
 
+//mobile version of dropdown in navbar
+const citiesIcon = document.querySelector("#cityBurger");
+const navbarMenu = document.querySelector("#navLinks")
+
+cityBurger.addEventListener("click", () => {
+    navbarMenu.classList.toggle("is-active");
+})
 /*
  * declare map as a global variable
  */
