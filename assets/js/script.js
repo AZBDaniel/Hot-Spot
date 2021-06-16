@@ -8,7 +8,14 @@ function cityDisplay() {
     var place = document.getElementById("citySelect").value;
     document.getElementById("demo").innerHTML = "You Selected " + place + ":";
 
+    var cityImage = document.getElementById('cityImage')
+    
+
     if (place == "Phoenix") {
+         
+        
+        cityImage.innerHTML = "<img src='./assets/images/phoenix.png' width='1000' height='1000'>"
+ 
         document.getElementById("demo2").innerHTML = "Marker One: Suns Arena, Marker Two: Chase Field";
         var map = new google.maps.Map(document.getElementById("map_div"), {
             center: new google.maps.LatLng(33.44872557096855, -112.07732143245543),
@@ -57,6 +64,9 @@ function cityDisplay() {
     }
 
     else if (place == "Tucson") {
+
+        cityImage.innerHTML = "<img src='./assets/images/tucson.png' width='1000' height='1000'>"
+
         document.getElementById("demo2").innerHTML = "Marker One: Tucson Museum of Art, Marker Two: University of Arizona";
         var map = new google.maps.Map(document.getElementById("map_div"), {
             center: new google.maps.LatLng(32.22256039879599, -110.97470036193934),
@@ -104,6 +114,9 @@ function cityDisplay() {
     }
 
     else if (place == "Flagstaff") {
+
+        cityImage.innerHTML = "<img src='./assets/images/flagstaff.png' width='1000' height='1000'>"
+
         document.getElementById("demo2").innerHTML = "Marker One: Pine Canyon Country Club, Marker Two: Lowell Observatory";
         var map = new google.maps.Map(document.getElementById("map_div"), {
             center: new google.maps.LatLng(35.19877955557851, -111.6483567279641),
@@ -151,6 +164,9 @@ function cityDisplay() {
     }
 
     else if (place == "Sedona") {
+
+        cityImage.innerHTML = "<img src='./assets/images/sedona.png' width='1000' height='1000'>"
+
         document.getElementById("demo2").innerHTML = "Marker One: Amitabha Stupa and Peace Park, Marker Two: Sugarloaf Trailhead";
         var map = new google.maps.Map(document.getElementById("map_div"), {
             center: new google.maps.LatLng(34.86346157815572, -111.79579874706093),
