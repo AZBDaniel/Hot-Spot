@@ -17,26 +17,48 @@
     <div id="map"></div>
 
     <!--Header Section-->
-    <nav class="navbar">
-        <!--Logo-->
+    <nav class="navbar has-background-link-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item">
-                <div class="img-container">
-                    <img src="./assets/images/hotspotlogo.PNG" alt="logo" style="max-height: 1000px"
-                        class="py-3 px-3" />
-                </div>
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="./assets/images/hotspotlogo1.PNG" width="112" height="100">
             </a>
-            <a class="navbar-burger">
-                <span></span>
-                <span></span>
+
+            <a role="button" class="navbar-burger has-background-danger-dark has-text-primary-light" id="cityBurger" aria-label="menu" aria-expanded="false"
+                data-target="hotspotNavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div class="navbar-menu is-active" id="nav-links">
+        <div id="hotspotNavbar" class="navbar-menu" id="navLinks">
+            <div class="navbar-start">
+            </div>
+
             <div class="navbar-end">
-                <a href="https://github.com/AZBDaniel/hot-spot" class="navbar-item">
-                    GitHub
-                </a>
+                <div class="navbar-item has-dropdown is-hoverable has-background-danger-dark has-text-primary-light">
+                    <a class="navbar-link has-background-danger-dark has-text-primary-light">
+                        Cities
+                    </a>
+
+                    <div class="navbar-dropdown is-right has-background-danger-dark has-text-primary-light">
+                        <a class="navbar-item has-background-danger-dark has-text-primary-light">
+                            Phoenix
+                        </a>
+                        <hr class="navbar-divider has-background-danger-dark has-text-primary-light">
+                        <a class="navbar-item has-background-danger-dark has-text-primary-light">
+                            Tucson
+                        </a>
+                        <hr class="navbar-divider has-background-danger-dark has-text-primary-light">
+                        <a class="navbar-item has-background-danger-dark has-text-primary-light">
+                            Flagstaff
+                        </a>
+                        <hr class="navbar-divider has-background-danger-dark has-text-primary-light">
+                        <a class="navbar-item has-background-danger-dark has-text-primary-light">
+                            Sedona
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -53,7 +75,6 @@
 
     <!--State Lists-->
     <section class="main section">
-        <div class="cityList">
             <div id="map_div" style="height: 400px;"></div>
             <div class="Phoenix">Phoenix</div>
             <div class="Tucson">Tucson</div>
@@ -62,8 +83,8 @@
             <div class="section cityList has-text-centered">
                 <!--Dropdown Menu to Lists Places-->
                 <select id="citySelect" onchange="stateDisplay()">
-                    <option value="Tu">Tucson</option>
                     <option value="Px">Phoenix</option>
+                    <option value="Tu">Tucson</option>
                     <option value="Fs">Flagstaff</option>
                     <option value="Se">Sedona</option>
                 </select>
