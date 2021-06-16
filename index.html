@@ -21,8 +21,8 @@
                 <img src="./assets/images/hotspotlogo1.PNG" width="112" height="100">
             </a>
 
-            <a role="button" class="navbar-burger has-background-danger-dark has-text-primary-light" id="cityBurger" aria-label="menu" aria-expanded="false"
-                data-target="hotspotNavbar">
+            <a role="button" class="navbar-burger has-background-danger-dark has-text-primary-light" id="cityBurger"
+                aria-label="menu" aria-expanded="false" data-target="hotspotNavbar">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -72,8 +72,21 @@
 
 
     <!--State Lists-->
-    <section class="main section">
+    <div class="container">
+        <section class="mapSection">
             <div id="map_div" style="height: 400px;"></div>
+        </section>
+        <section id="cityProfile" class="Phoenix">
+            <div class="flex-row">
+                <h2 class="cityTitle">Phoenix</h2>
+            </div>
+            <div class="cityPhoto">
+                <img src="./assets/images/phoenix.png" alt="phxphoto"/>
+            </div>
+            <div class="phxBio">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aperiam, corrupti, quasi earum laborum cum eius nisi maxime deserunt a velit. Sed laborum distinctio quibusdam, incidunt nesciunt dolorum modi atque?</p>
+            </div>
+        </section>
             <div class="Phoenix">Phoenix</div>
             <div class="Tucson">Tucson</div>
             <div class="Flagstaff">Flagstaff</div>
@@ -88,18 +101,19 @@
                 </select>
                 <p id="demo"></p>
             </div>
-    </section>
+        </section>
 
-    <!--State Information Display-->
-    <section class="cityDisplay">
-        <div class="siteLocation">
-            <div class="siteOne">Click City for Results</div>
-            <div class="siteTwo">Click City for Results</div>
-            <div class="siteThird">Click City for Results</div>
-        </div>
-        <div class="siteweather">Click City to see Weather Forcast</div>
-        <div class="sitedescription">Click Site to see Site Description</div>
-    </section>
+        <!--State Information Display-->
+        <section class="cityDisplay">
+            <div class="siteLocation">
+                <div class="siteOne">Click City for Results</div>
+                <div class="siteTwo">Click City for Results</div>
+                <div class="siteThird">Click City for Results</div>
+            </div>
+            <div class="siteweather">Click City to see Weather Forcast</div>
+            <div class="sitedescription">Click Site to see Site Description</div>
+        </section>
+    </div>
 
     <!--Footer/To Come-->
     <footer class="footer">
