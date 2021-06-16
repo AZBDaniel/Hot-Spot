@@ -4,11 +4,7 @@
 
 ## User Story
 
-AS A traveler/person on vacation
-
-I WANT a list of attractions of the place im visiting
-
-SO THAT I can enjoy my time visiting and do less research
+As a tourist on vacation, I want an easy way to learn about the city I'm visiting and some suggestions for places to visit so that I can plan out my vacation time accordingly.
 
 ## Description 
 
@@ -21,9 +17,17 @@ SO THAT I can enjoy my time visiting and do less research
 ## Web Page Image
 
 ![wireFrame](assets/images/hot-spot-wire-frame.PNG)
+![HomePage]()
+![Phoenix&Map]()
+![Streetview]()
 
 ## Features Codes
-
+HTML
+CSS
+BULMA
+JAVASCRIPT
+JQUERY
+GOOGLE MAPS
 
 
 ## Contributing + Credits
@@ -37,4 +41,8 @@ SO THAT I can enjoy my time visiting and do less research
 
 
 ##  Created by:
+
+Bryan Daniel
+Alec Stewart
+& Brent Albers
 
