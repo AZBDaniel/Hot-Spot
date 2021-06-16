@@ -1,10 +1,10 @@
-  body {
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+}
 
-  #hero {
+#hero {
     background-image: url("../images/gc-hero.jpg");
     background-position: center;
     background-size: cover;
