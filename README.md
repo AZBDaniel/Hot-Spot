@@ -4,37 +4,35 @@
 
 ## User Story
 
-AS A traveler/person on vacation
+As a tourist on vacation, I want an easy way to learn about the city I'm visiting and some suggestions for places to visit so that I can plan out my vacation time accordingly.
 
-I WANT a list of attractions of the place im visiting
+# Screenshots
 
-SO THAT I can enjoy my time visiting and do less research
-
-## Description 
-
-
-
-## Usage 
-
-
-
-## Web Page Image
-
+## Wireframe
 ![wireFrame](assets/images/hot-spot-wire-frame.PNG)
 
-## Features Codes
+## Home Page
+![HomePage](assets/images/homepage.PNG)
 
+## Mobile version
+![Mobile](assets/images/mobile.PNG)
 
+## Satellite Map
+![Phoenix&Map](assets/images/Phoenixmap.PNG)
 
-## Contributing + Credits
+## Street View
+![Streetview](assets/images/Phoenixmap3.PNG)
 
-### Class Mates
-
-
-
-### BootCamp TA's
-
-
+# Built With
+    HTML
+    CSS
+    BULMA
+    JAVASCRIPT
+    GOOGLE MAPS
 
 ##  Created by:
+
+    Bryan Daniel
+    Alec Stewart
+    & Brent Albers
 
