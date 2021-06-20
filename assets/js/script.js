@@ -15,7 +15,7 @@ function cityDisplay() {
     if (place == "Phoenix") {
 
 
-        cityImage.innerHTML = "<img src='./assets/images/phoenix.png' width='1000' height='1000'>"
+        cityImage.innerHTML = "<img src='./assets/images/phoenix.png' width='900' height='400'>"
 
         document.getElementById("demo2").innerHTML = "Arizona's capital in the Sonoran Desert, known for chic resorts, golf courses, & the home of the Phoenix Suns.";
         var map = new google.maps.Map(document.getElementById("mapDiv"), {
@@ -59,7 +59,7 @@ function cityDisplay() {
 
     else if (place == "Tucson") {
 
-        cityImage.innerHTML = "<img src='./assets/images/tucson.png' width='1000' height='1000'>"
+        cityImage.innerHTML = "<img src='./assets/images/tucson.png' width='900' height='400'>"
 
         document.getElementById("demo2").innerHTML = "Southwestern city in the Sonoran Desert, home of University of Arizona & Saguaro National Park.";
         var map = new google.maps.Map(document.getElementById("mapDiv"), {
@@ -103,7 +103,7 @@ function cityDisplay() {
 
     else if (place == "Flagstaff") {
 
-        cityImage.innerHTML = "<img src='./assets/images/flagstaff.png' width='1000' height='1000'>"
+        cityImage.innerHTML = "<img src='./assets/images/flagstaff.png' width='900' height='400'>"
 
         document.getElementById("demo2").innerHTML = "Arizona city known for San Francisco Peaks & Arizona Snowbowl skiing, plus Native American sites.";
         var map = new google.maps.Map(document.getElementById("mapDiv"), {
@@ -147,7 +147,7 @@ function cityDisplay() {
 
     else if (place == "Sedona") {
 
-        cityImage.innerHTML = "<img src='./assets/images/sedona.png' width='1000' height='1000'>"
+        cityImage.innerHTML = "<img src='./assets/images/sedona.png' width='900' height='400'>"
 
         document.getElementById("demo2").innerHTML = "Arizona desert town known for red-rock buttes like Cathedral Rock, canyons & art galleries.";
         var map = new google.maps.Map(document.getElementById("mapDiv"), {

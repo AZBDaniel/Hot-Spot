@@ -44,25 +44,34 @@
             <div class="Flagstaff"></div>
             <div class="Sedona"></div>
             <div class="section cityList has-text-centered">
-                <p id="demo2" class="demotext is-size-4-mobile is-size-3 has-background-link-dark has-text-primary-light"></p>
+                <p id="demo2"
+                    class="demotext is-size-4-mobile is-size-3 has-background-link-dark has-text-primary-light"></p>
                 <!--Dropdown Menu to Lists Places-->
-                <select id="citySelect" class="dropdown is-size-4-mobile is-size-3 has-background-danger-dark has-text-primary-light" onchange="stateDisplay()">
+                <select id="citySelect"
+                    class="dropdown is-size-4-mobile is-size-3 has-background-danger-dark has-text-primary-light"
+                    onchange="stateDisplay()">
                     <option>Search..</option>
                     <option id="phoenixButton" value="Phoenix">Phoenix</option>
                     <option value="Tucson">Tucson</option>
                     <option value="Flagstaff">Flagstaff</option>
                     <option value="Sedona">Sedona</option>
                 </select>
-                <p id="demo" class="demotext is-size-4-mobile is-size-3 has-background-link-dark has-text-primary-light"></p>
-                <div id="cityImage"></div>
-                
+                <p id="demo"
+                    class="demotext is-size-4-mobile is-size-3 has-background-link-dark has-text-primary-light"></p>
+                <div class="container2 flex">
+                    <div class="flexColumn" id="cityImage"></div>
+                    <div> Recent Search History
+                        <div id="searchHistory"></div>
+                    </div>
+                </div>
+
             </div>
 
             <h3>5-Day Forecast:</h3>
-            <section class="fiveDayForecast">
+            <section class=" flex spaceBetween fiveDayForecast">
 
                 <!--1st of five day forecast-->
-                <div class="Forecast">
+                <div class="flexColumn Forecast">
                     <h3 id="weatherD1"></h3>
                     <img id="iconD1">
                     <p id="tempD1"></p>
@@ -71,7 +80,7 @@
                 </div>
 
                 <!--2nd of five day forecast-->
-                <div class="Forecast">
+                <div class="flexColumn Forecast">
                     <h3 id="weatherD2"></h3>
                     <img id="iconD2">
                     <p id="tempD2"></p>
@@ -80,7 +89,7 @@
                 </div>
 
                 <!--3rd of five day forecast-->
-                <div class="Forecast">
+                <div class="flexColumn Forecast">
                     <h3 id="weatherD3"></h3>
                     <img id="iconD3">
                     <p id="tempD3"></p>
@@ -89,7 +98,7 @@
                 </div>
 
                 <!--4th of five day forecast-->
-                <div class="Forecast">
+                <div class="flexColumn Forecast">
                     <h3 id="weatherD4"></h3>
                     <img id="iconD4">
                     <p id="tempD4"></p>
@@ -98,7 +107,7 @@
                 </div>
 
                 <!--5th of five day forecast-->
-                <div class="Forecast">
+                <div class="flexColumn Forecast">
                     <h3 id="weatherD5"></h3>
                     <img id="iconD5">
                     <p id="tempD5"></p>
@@ -106,20 +115,19 @@
                     <p id="humidityD5"></p>
                 </div>
             </section>
-            <div id="searchHistory"></div>
         </section>
 
-    
-    <!--Footer/To Come-->
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>Improvements to be made soon! :) </p>
-        </div>
 
-    </footer>
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyA3pyIRKeVOMy99DHETNa1VrGExhuXM0Z8"></script>
-    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-    <script src="assets/js/script.js"></script>
+        <!--Footer/To Come-->
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>Improvements to be made soon! :) </p>
+            </div>
+
+        </footer>
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyA3pyIRKeVOMy99DHETNa1VrGExhuXM0Z8"></script>
+        <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>

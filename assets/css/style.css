@@ -11,3 +11,17 @@ body {
     position: relative;
     background-repeat: no-repeat;
 }
+
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+display: flex;
+flex-direction: column;
+margin: 15px;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
