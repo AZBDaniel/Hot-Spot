@@ -76,7 +76,7 @@
     <!--City Lists-->
     <div class="container">
         <section class="mapSection">
-            <div id="map_div" style="height: 400px;"></div>
+            <div id="mapDiv" style="height: 400px;"></div>
             <div class="Phoenix"></div>
             <div class="Tucson"></div>
             <div class="Flagstaff"></div>
@@ -95,6 +95,56 @@
                 <div id="cityImage"></div>
                 
             </div>
+
+            <h3>5-Day Forecast:</h3>
+            <section class="fiveDayForecast">
+
+                <!--1st of five day forecast-->
+                <div class="Forecast">
+                    <h3 id="weatherD1"></h3>
+                    <img id="iconD1">
+                    <p id="tempD1"></p>
+                    <p id="windD1"></p>
+                    <p id="humidityD1"></p>
+                </div>
+
+                <!--2nd of five day forecast-->
+                <div class="Forecast">
+                    <h3 id="weatherD2"></h3>
+                    <img id="iconD2">
+                    <p id="tempD2"></p>
+                    <p id="windD2"></p>
+                    <p id="humidityD2"></p>
+                </div>
+
+                <!--3rd of five day forecast-->
+                <div class="Forecast">
+                    <h3 id="weatherD3"></h3>
+                    <img id="iconD3">
+                    <p id="tempD3"></p>
+                    <p id="windD3"></p>
+                    <p id="humidityD3"></p>
+                </div>
+
+                <!--4th of five day forecast-->
+                <div class="Forecast">
+                    <h3 id="weatherD4"></h3>
+                    <img id="iconD4">
+                    <p id="tempD4"></p>
+                    <p id="windD4"></p>
+                    <p id="humidityD4"></p>
+                </div>
+
+                <!--5th of five day forecast-->
+                <div class="Forecast">
+                    <h3 id="weatherD5"></h3>
+                    <img id="iconD5">
+                    <p id="tempD5"></p>
+                    <p id="windD5"></p>
+                    <p id="humidityD5"></p>
+                </div>
+            </section>
+            <div id="searchHistory"></div>
         </section>
 
     
@@ -105,8 +155,8 @@
         </div>
 
     </footer>
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyA3pyIRKeVOMy99DHETNa1VrGExhuXM0Z8">
-    </script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyA3pyIRKeVOMy99DHETNa1VrGExhuXM0Z8"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
