@@ -20,6 +20,12 @@ As a tourist on vacation, I want an easy way to learn about the city I'm visitin
 ## Street View
 ![Streetview](assets/images/Phoenixmap2.PNG)
 
+## Installation
+
+[Click here to reach the github repository](https://github.com/AZBDaniel/hot-spot.git)
+
+[Click here to view the published version of HotSpot](https://azbdaniel.github.io/hot-spot/)
+
 # Built With
     HTML
     CSS
