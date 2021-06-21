@@ -11,3 +11,40 @@ body {
     position: relative;
     background-repeat: no-repeat;
 }
+
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+display: flex;
+flex-direction: column;
+margin: 15px;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.fiveDayForecast {
+    border-style: solid;
+}
+
+.container2 {
+    border-style: solid;
+    border-color: #3273dc;
+}
+
+#cityImage {
+    margin: 0 15px 0 0;
+}
+
+#citySelect {
+
+    margin: 20px;
+}
+
+#mapDiv {
+    border: solid;
+    border-color: #3273dc;
+}
