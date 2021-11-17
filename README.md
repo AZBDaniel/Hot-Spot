@@ -14,6 +14,11 @@
 
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 
+## API
+
+![Google Maps](https://img.shields.io/badge/GoogleMaps-4285F4?style=plastic&logo=GoogleMaps&logoColor=white)
+![Open Weather](https://img.shields.io/badge/OpenWeather-eb6e4b?style=plastic&logo=GoogleMaps&logoColor=white)
+
 ## Description
 
 As a tourist on vacation, I want an easy way to learn about the city I'm visiting and some suggestions for places to visit so that I can plan out my vacation time accordingly.
